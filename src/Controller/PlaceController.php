@@ -64,7 +64,7 @@ class PlaceController extends AbstractController
     }
 
     /**
-     * @Route("/api/place_like/", name="api_place_like",methods="POST")
+     * @Route("/api/place/{numPlace}/liked/{numPerson}", name="api_place_add_ liker",methods="POST")
      */
     public function like(EntityManagerInterface $entityManager,PlaceRepository $placeRepository,PersonRepository $personRepository,$idPlace,$idPerson)
     {
